@@ -14,6 +14,7 @@
 8. Шаги 3-7 повторить 9, 28, 31 раз
 
 */
+
 int xa = 50, ya = 1, 
 xb = 1, yb = 20,
 xc =100, yc = 20;
@@ -23,3 +24,24 @@ Console.SetCursorPosition(xb, yb);
 Console.WriteLine("+");
 Console.SetCursorPosition(xc, yc);
 Console.WriteLine("+");
+
+int x= xa, y = xb;
+int cnt = 0;
+while(cnt < 5000){
+int what = new Random().Next(0,3); // задали полуинтервал [0,3) -> 0 1 2 (не 3)
+if (what==0){
+    x = (x+xa)/2;
+    y = (y+ya)/2;
+}
+if (what==1){
+    x = (x+xb)/2;
+    y = (y+yb)/2;
+}
+if (what==0){
+    x = (x+xc)/2;
+    y = (y+yc)/2;
+}
+Console.SetCursorPosition(x, y);
+Console.WriteLine("+");
+cnt++;
+}
