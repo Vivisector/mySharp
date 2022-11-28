@@ -5,6 +5,11 @@
 Вывести имя пользователя
 КОНЕЦ
 */
+ /*
+Write(); - вывод в одной строке
+WriteLine(); - в конце перйти на новую строку
+readLine(); - считать данные пользователя
 
+ */
 string username = Console.ReadLine();
 Console.WriteLine("Привет, " + username + "!");
