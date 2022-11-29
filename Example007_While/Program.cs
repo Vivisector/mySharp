@@ -15,15 +15,17 @@
 
 */
 
-int xa = 50, ya = 1, 
-xb = 1, yb = 20,
-xc =100, yc = 20;
+int xa = 100, ya = 1, 
+xb = 0, yb = 0,
+xc =50, yc = 30;
 Console.SetCursorPosition(xa, ya);
-Console.WriteLine("+");
+Console.WriteLine("a");
 Console.SetCursorPosition(xb, yb);
-Console.WriteLine("+");
+Console.WriteLine("b");
+
 Console.SetCursorPosition(xc, yc);
-Console.WriteLine("+");
+Console.WriteLine("c");
+
 
 int x= xa, y = xb;
 int cnt = 0;
